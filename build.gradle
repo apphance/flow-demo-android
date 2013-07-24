@@ -2,6 +2,7 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
+        maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
     }
     dependencies {
         classpath('com.apphance.flow:apphance-flow:1.0-SNAPSHOT')
