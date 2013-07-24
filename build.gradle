@@ -7,6 +7,12 @@ buildscript {
     dependencies {
         classpath('com.apphance.flow:apphance-flow:1.0-SNAPSHOT')
     }
+
+    configurations.all {
+        resolutionStrategy {
+            cacheChangingModulesFor 0, 'seconds'
+        }
+    }
 }
 
 apply plugin: 'apphance-flow'
