@@ -7,3 +7,4 @@ AndroidManifest.xml.orig
 userHome
 .gradle
 build
+.DS_Store
