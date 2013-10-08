@@ -7,7 +7,7 @@ buildscript {
     def flowVer = System.getProperty('flow.version') ?: System.getenv('FLOW_VERSION') ?: '1.+'
     println "Using Apphance Flow version: $flowVer"
     dependencies {
-        classpath('com.apphance.flow:apphance-flow:1.+')
+        classpath("com.apphance.flow:apphance-flow:$flowVer")
     }
 
     configurations.all {
