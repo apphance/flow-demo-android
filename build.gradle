@@ -4,6 +4,8 @@ buildscript {
         mavenCentral()
         maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
     }
+    def flowVer = System.getProperty('flow.version') ?: System.getenv('FLOW_VERSION') ?: '1.+'
+    println "Using Apphance Flow version: $flowVer"
     dependencies {
         classpath('com.apphance.flow:apphance-flow:1.+')
     }
@@ -16,5 +18,3 @@ buildscript {
 }
 
 apply plugin: 'apphance-flow'
-
-
